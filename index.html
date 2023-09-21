@@ -15,7 +15,7 @@
       <p class="image_credit">
         This picture can be found
         <a
-          href="https://wall.alphacoders.com/by_sub_category.php?id=194224&name=Landscape+Wallpapers"
+          href="https://images3.alphacoders.com/132/thumbbig-1322308.webp"
           target="_blank"
           >here</a
         >
@@ -23,11 +23,98 @@
     </section>
 
     <section class="right-side">
-      <div class="warning-msg">
-        This is not an actual service. It's purely aesthetic.
+      <!-- <img id="test" src="nightsky.jpg" /> -->
+      <div class="inspire-msg">
+        <p>
+          This is supposed to be a motivational message that gets you pumped and
+          makes you want to use this service or become a better person overall
+          and contribute to society as best as you can.
+        </p>
+        <p>-Some wise person</p>
       </div>
 
-      <div class="form"></div>
+      <div class="form">
+        <h2>Let's get started</h2>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <label for="firstName"
+              >first name*<input
+                type="text"
+                id="firstName"
+                minlength="3"
+                maxlength="12"
+                autocomplete="off"
+                name="first_name"
+                required
+            /></label>
+
+            <label for="lastName"
+              >last name*<input
+                type="text"
+                id="lastName"
+                minlength="3"
+                maxlength="12"
+                autocomplete="off"
+                name="last_name"
+                required
+            /></label>
+
+            <label for="email"
+              >email*<input
+                type="email"
+                id="email"
+                autocomplete="off"
+                name="e_mail"
+                required
+            /></label>
+
+            <label for="phoneNumber"
+              >phone number<input
+                type="text"
+                id="phoneNumber"
+                autocomplete="off"
+                name="phone_number"
+                pattern="[0-9]{10}"
+                placeholder="+30"
+                title="Do NOT type the '+30' part, just your number."
+                required
+            /></label>
+
+            <label for="password"
+              >password*<input
+                type="password"
+                id="password"
+                name="pwd"
+                minlength="6"
+                maxlength="16"
+                autocomplete="off"
+                required
+              /><span class="passwords-dont-match hidden"
+                >*Passwords do not match</span
+              >
+              <span class="passwords-match hidden"
+                >*Passwords match</span
+              ></label
+            >
+
+            <label for="password_confirm"
+              >confirm password*<input
+                type="password"
+                id="password_confirm"
+                name="pwd_confirm"
+                autocomplete="off"
+                required
+            /></label>
+          </div>
+
+          <div class="finish">
+            <button type="submit">Create Account</button>
+            <p class="log-in">
+              Already have an account? <a href="#">Log in</a>
+            </p>
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>
