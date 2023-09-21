@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --left-side-width: 30vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+}
+
+.left-side {
+  background-image: url("wallpaper.jpeg");
+  background-position-x: center;
+  background-position-y: -800px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: var(--left-side-width);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-side > p {
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20vh;
+  font-size: 3rem;
+}
+
+.image_credit {
+  position: relative;
+  bottom: 2vh;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: mediumslateblue;
+}
+
+/* Right side of page*/
+
+.right-side {
+  width: calc(100vw - var(--left-side-width));
+}
+
+.warning-msg {
+  height: 30vh;
+  background-color: rgba(223, 223, 223, 0.4);
+}
