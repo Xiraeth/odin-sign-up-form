@@ -153,7 +153,8 @@ input:focus:invalid {
   border: 1px solid red;
 }
 
-.passwords-dont-match {
+.passwords-dont-match,
+.password-wrong-size {
   font-variant: normal;
   font-size: 0.8rem;
   color: rgb(207, 119, 119);

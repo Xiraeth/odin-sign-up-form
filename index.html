@@ -89,11 +89,9 @@
                 maxlength="16"
                 autocomplete="off"
                 required
-              /><span class="passwords-dont-match hidden"
-                >*Passwords do not match</span
-              >
-              <span class="passwords-match hidden"
-                >*Passwords match</span
+              />
+              <span class="password-wrong-size hidden"
+                >*Password needs to be between 6 and 16 characters</span
               ></label
             >
 
@@ -104,9 +102,14 @@
                 name="pwd_confirm"
                 autocomplete="off"
                 required
-            /></label>
+              /><span class="passwords-dont-match hidden"
+                >*Passwords do not match</span
+              >
+              <span class="passwords-match hidden"
+                >*Passwords match</span
+              ></label
+            >
           </div>
-
           <div class="finish">
             <button type="submit">Create Account</button>
             <p class="log-in">
@@ -115,6 +118,7 @@
           </div>
         </form>
       </div>
+      <button type="submit" class="yes">YES</button>
     </section>
   </body>
 </html>
