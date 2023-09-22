@@ -18,7 +18,11 @@ function passwordsDontMatchFn() {
 }
 
 function checkPasswords() {
-  if (password.value == rePassword.value && !password.checkValidity()) {
+  if (
+    password.value == rePassword.value &&
+    !password.checkValidity() &&
+    password.value !== ""
+  ) {
     passwordsMatchFn();
   } else if (password.value == rePassword.value && password.checkValidity()) {
     passwordsMatchFn();
